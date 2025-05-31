@@ -1,6 +1,7 @@
 const grid = document.getElementById('grid');
 const modeBar = document.getElementById('settingsBar');
-const changeGrid = document.getElementById('changeGrid');
+const changeButton = document.getElementById('changeButton');
+const gridSizeInput = document.getElementById('gridSize');
 const defaultGrid = 32;
 createGrid(defaultGrid);
 
@@ -18,16 +19,15 @@ modeBar.addEventListener('click', (e)=>{
     }
     updateActiveButton();
 });
-changeGrid.addEventListener('click', ()=>{
-    const gridSize = document.getElementById('gridSize');
-    if (gridSize.value > 100 || gridSize.value < 1){
-        alert("Please enter a number between 1-100!");
-        gridSize.value = '16';
-        createGrid(16);
-        return;
+
+changeButton.addEventListener('click', changeGrid);
+gridSizeInput.addEventListener('keydown', (e)=>{
+    if (e.key === 'Enter'){
+        console.log("hello!");
+        changeGrid();
     }
-    createGrid(gridSize.value);
 });
+
 grid.addEventListener('mouseover', draw);
 grid.addEventListener('click', draw);
 
@@ -46,6 +46,17 @@ function updateActiveButton() {
     if (activeButton) {
         activeButton.classList.add('active');
     }
+}
+
+function changeGrid(){
+    size = gridSizeInput.value
+    if (size > 100 || size < 1){
+        alert("Please enter a number between 1-100!");
+        size = '16';
+        createGrid(16);
+        return;
+    }
+    createGrid(size);
 }
 
 function createGrid(num) {

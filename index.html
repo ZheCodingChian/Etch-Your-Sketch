@@ -18,17 +18,9 @@
                 <button id="clear" title="Resets Canvas">Clear</button>  
             </div>
             <div id="sizeBar">
-                <label for="numberInput">Grid Size:</label>
-                <input id="gridSize" min="1" max="100" value ="16" list="gridOptions" required>
-                <datalist id="gridOptions">
-                    <option>1</option>
-                    <option>4</option>
-                    <option>16</option>
-                    <option>32</option>
-                    <option>64</option>
-                    <option>100</option>
-                </datalist>
-                <button id = "changeGrid">Change</button>
+                <label for="gridSize">Grid Size (1-100):</label>
+                <input id="gridSize" min="1" max="100"  type="number" value ="16" list="gridOptions" required>
+                <button id = "changeButton">Change</button>
             </div>
         </div>
     </div>

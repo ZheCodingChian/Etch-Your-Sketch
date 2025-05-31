@@ -123,5 +123,8 @@ function draw(e){
     }
 }
 
-
-
+//make the header rainbow
+const header = document.querySelector('#info a span');
+setInterval(() => {
+    header.style.color = randomColor();
+}, 800);

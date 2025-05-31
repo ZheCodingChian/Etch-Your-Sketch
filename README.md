@@ -1,5 +1,5 @@
 # ✏️ Etch Your Sketch
-### An interactive drawing canvas built with **vanilla JavaScript**, **HTML**, and **CSS** – a project built as part of [The Odin Project](https://www.theodinproject.com) curriculum.
+### An interactive drawing canvas built with **vanilla JavaScript**, **HTML**, and **CSS**.
 
 ## 🎮 Live Demo
 <video src="https://github.com/user-attachments/assets/d3bfda65-0e1a-4643-8994-8aaafed1ab34" controls loop width="500">
@@ -29,3 +29,5 @@
 -  Event listeners capture mouse and keyboard actions for real-time drawing on the canvas.
 -  Random color generator utilies 'Math.random()' to generate RGB values.
 
+
+ ##### Project built as part of [The Odin Project](https://www.theodinproject.com) curriculum.

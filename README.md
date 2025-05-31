@@ -1,11 +1,8 @@
 # ✏️ Etch Your Sketch
-### An interactive drawing canvas built with **vanilla JavaScript**, **HTML**, and **CSS** – a project as part of [The Odin Project](https://www.theodinproject.com) circulum.
+### An interactive drawing canvas built with **vanilla JavaScript**, **HTML**, and **CSS** – a project as part of [The Odin Project](https://www.theodinproject.com) curriculum.
 
 ## 🎮 Live Demo
-
-<video width="900" autoplay muted loop>
-  <source src="./assests/EtchYourSketch Demo MP4.MP4" type="video/mp4">
-  Your browser does not support the video tag.
+<video src="https://github.com/user-attachments/assets/d3bfda65-0e1a-4643-8994-8aaafed1ab34" controls loop width="500">
 </video>
 
 ## 🖥️ Check Out The Website! 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch Your Sketch!</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="grid"></div>
+        <div id="bar">
+            <div id="settingsBar">
+                <button id="random" title="Draws in random colours">Random Colours</button>
+                <button id="draw" class ='active' title="Draws in Black">Draw</button>
+                <button id="erase" title="Hold Shift for Eraser">Eraser</button>
+                <button id="clear" title="Resets Canvas">Clear</button>  
+            </div>
+            <div id="sizeBar">
+                <label for="numberInput">Grid Size:</label>
+                <input id="gridSize" min="1" max="100" value ="16" list="gridOptions" required>
+                <datalist id="gridOptions">
+                    <option>1</option>
+                    <option>4</option>
+                    <option>16</option>
+                    <option>32</option>
+                    <option>64</option>
+                    <option>100</option>
+                </datalist>
+                <button id = "changeGrid">Change</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

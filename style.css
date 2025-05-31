@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #9b001f ;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    
+}
+
+#grid{
+    width: 700px;
+    height: 700px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+}
+
+#grid:hover{
+    cursor : crosshair;
+}
+
+#bar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 10px;
+}
+
+#settingsBar {
+    display:flex;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
+
+#settingsBar button{
+    height: 45px;
+    width: 120px;
+    font-size: 1rem;
+}
+
+#sizeBar {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    color: white;
+    font-size: 1rem;
+
+}
+
+#sizeBar input{
+    width: 60px;
+}
+
+button {
+    border-radius: 6px;
+    border-color: white;
+
+}
+
+.row{
+    flex-grow: 1;
+    display: flex;
+}
+
+.pixel{
+    border-style: solid;
+    border-width: 1px;
+    flex-grow: 1;
+    user-select: none;
+    background-color: white;
+}
+
+.active {
+    background-color: rgb(65, 64, 64);
+    border-width: 3px;
+    color : white;
+    font-weight: bold;
+    border-color: black;
+}
+
